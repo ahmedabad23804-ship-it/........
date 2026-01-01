@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة اللغة العربية | أ/ محمد صلاح</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Cairo', sans-serif; background-color: #0f172a; color: white; }
+        .vipFont { font-weight: 900; }
+        .smooth { transition: all 0.3s ease-in-out; }
+        /* تأثيرات إضافية */
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 10px 30px -10px rgba(6, 182, 212, 0.3); }
+    </style>
+</head>
+<body class="smooth">
+
+    <nav class="fixed w-full z-50 top-0 bg-slate-900/95 backdrop-blur shadow-md border-b border-slate-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-cyan-500 rounded-lg flex items-center justify-center font-black text-xl text-white">ض</div>
+                    <div class="flex flex-col">
+                        <span class="text-xl font-black text-white vipFont">اللغة العربية</span>
+                        <span class="text-xs text-cyan-400 font-bold">مع الأسطورة</span>
+                    </div>
+                </div>
+
+                <div class="hidden md:flex gap-8 text-sm font-bold text-slate-300">
+                    <a href="#" class="hover:text-cyan-400 smooth">الرئيسية</a>
+                    <a href="#" class="text-cyan-400">الكورسات</a>
+                    <a href="#" class="hover:text-cyan-400 smooth">بنك الأسئلة</a>
+                    <a href="#" class="hover:text-cyan-400 smooth">تواصل معنا</a>
+                </div>
+
+                <div class="flex items-center gap-3">
+                    <div class="hidden md:block text-left">
+                        <p class="text-xs text-slate-400">مرحباً بك</p>
+                        <p class="text-sm font-bold text-white">الطالب المجتهد</p>
+                    </div>
+                    <img src="https://ui-avatars.com/api/?name=User&background=06b6d4&color=fff" class="w-10 h-10 rounded-full border-2 border-cyan-500 p-0.5" alt="Profile">
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="h-20"></div>
+
+    <header class="relative py-16 bg-gradient-to-b from-slate-900 to-slate-800 text-center overflow-hidden">
+        <div class="absolute top-0 left-0 w-64 h-64 bg-cyan-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob"></div>
+        <div class="absolute top-0 right-0 w-64 h-64 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-2000"></div>
+
+        <div class="relative max-w-4xl mx-auto px-4">
+            <div class="w-32 h-32 mx-auto rounded-full border-4 border-cyan-500 p-1 mb-6 shadow-2xl shadow-cyan-500/20">
+                <img src="https://placehold.co/400x400/1e293b/06b6d4?text=Mr+Salah" class="w-full h-full rounded-full object-cover" alt="Mr Mohamed Salah">
+            </div>
+            <h1 class="text-4xl md:text-5xl font-black text-white mb-4 vipFont leading-tight">
+                أهلاً بيك في <span class="text-cyan-400">عالم اللغة العربية</span>
+            </h1>
+            <p class="text-lg text-slate-400 font-semibold mb-8 max-w-2xl mx-auto">
+                منصة تعليمية متكاملة لطلاب الثانوية العامة.. شرح، حل، ومتابعة دورية تضمنلك الدرجة النهائية بإذن الله.
+            </p>
+            <div class="flex justify-center gap-4">
+                <button class="bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-3 rounded-xl font-bold shadow-lg smooth transform hover:scale-105">
+                    تصفح الكورسات
+                </button>
+                <button class="border-2 border-slate-600 hover:border-cyan-400 text-slate-300 hover:text-white px-8 py-3 rounded-xl font-bold smooth">
+                    شرح المنصة
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-16 px-4 max-w-7xl mx-auto">
+        
+        <div class="flex items-end justify-between mb-10 border-b border-slate-700 pb-4">
+            <div>
+                <h2 class="text-3xl font-black text-white vipFont">أحدث <span class="text-cyan-400">الحصص</span></h2>
+                <p class="text-slate-400 text-sm mt-1">اختر الكورس المناسب وابدأ رحلة التفوق</p>
+            </div>
+            <a href="#" class="text-cyan-400 hover:text-cyan-300 text-sm font-bold hidden sm:block">عرض الجميع &larr;</a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 card-hover smooth group relative">
+                <div class="absolute top-4 right-4 bg-rose-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg z-10">حصري</div>
+                
+                <div class="relative overflow-hidden h-48">
+                    <img src="https://placehold.co/600x400/0f172a/ffffff?text=Course+01" class="w-full h-full object-cover group-hover:scale-110 smooth" alt="Course Image">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 smooth cursor-pointer">
+                        <div class="w-12 h-12 bg-white/20 backdrop-blur rounded-full flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-5">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold text-white group-hover:text-cyan-400 smooth">كورس النحو الشامل (الوحدة الأولى)</h3>
+                    </div>
+                    <p class="text-slate-400 text-sm mb-4 line-clamp-2">
+                        شرح تفصيلي لكل قواعد النحو في الوحدة الأولى مع حل أكثر من 200 سؤال وتدريب عملي.
+                    </p>
+                    
+                    <div class="flex items-center gap-4 text-xs text-slate-500 mb-6 border-t border-slate-700 pt-3">
+                        <span class="flex items-center gap-1"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> 4 ساعات</span>
+                        <span class="flex items-center gap-1"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg> 3 مذكرات PDF</span>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <span class="block text-2xl font-black text-cyan-400">150 <span class="text-xs font-normal text-slate-400">ج.م</span></span>
+                        </div>
+                        <button class="bg-cyan-600 hover:bg-cyan-500 text-white px-5 py-2 rounded-lg font-bold text-sm smooth shadow-lg shadow-cyan-900/50">
+                            اشترك الآن
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 card-hover smooth group">
+                <div class="relative overflow-hidden h-48">
+                    <img src="https://placehold.co/600x400/1e293b/ffffff?text=Course+02" class="w-full h-full object-cover group-hover:scale-110 smooth" alt="Course Image">
+                </div>
+                <div class="p-5">
+                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-cyan-400 smooth">ورشة البلاغة (الاستعارة والكناية)</h3>
+                    <p class="text-slate-400 text-sm mb-4">كيف تستخرج الصور البيانية بسهولة؟ محاضرة لا غنى عنها لضمان درجات البلاغة.</p>
+                    <div class="flex items-center justify-between mt-6">
+                        <span class="text-2xl font-black text-cyan-400">80 <span class="text-xs font-normal text-slate-400">ج.م</span></span>
+                        <button class="bg-cyan-600 hover:bg-cyan-500 text-white px-5 py-2 rounded-lg font-bold text-sm smooth shadow-lg shadow-cyan-900/50">اشترك الآن</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 card-hover smooth group">
+                <div class="relative overflow-hidden h-48">
+                    <img src="https://placehold.co/600x400/334155/ffffff?text=Course+03" class="w-full h-full object-cover group-hover:scale-110 smooth" alt="Course Image">
+                </div>
+                <div class="p-5">
+                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-cyan-400 smooth">مراجعة ليلة الامتحان (الأدب)</h3>
+                    <p class="text-slate-400 text-sm mb-4">ملخص شامل لكل مدارس الأدب في فيديو واحد مركز.</p>
+                    <div class="flex items-center justify-between mt-6">
+                        <span class="text-2xl font-black text-cyan-400">120 <span class="text-xs font-normal text-slate-400">ج.م</span></span>
+                        <button class="bg-cyan-600 hover:bg-cyan-500 text-white px-5 py-2 rounded-lg font-bold text-sm smooth shadow-lg shadow-cyan-900/50">اشترك الآن</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 pt-16 pb-8 border-t border-slate-800 mt-10">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <div class="mb-8">
+                <h3 class="text-2xl font-black text-white vipFont mb-2">منصة اللغة العربية</h3>
+                <p class="text-slate-500 text-sm">طريقك للدرجة النهائية مع مستر محمد صلاح</p>
+            </div>
+            
+            <div class="flex justify-center gap-6 mb-8">
+                <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-blue-600 hover:text-white smooth">F</a>
+                <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-red-600 hover:text-white smooth">Y</a>
+                <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-green-500 hover:text-white smooth">W</a>
+            </div>
+
+            <div class="border-t border-slate-900 pt-8">
+                <p class="text-slate-600 text-sm">
+                    جميع الحقوق محفوظة © 2026 | تم التطوير بواسطة <span class="text-cyan-500 font-bold">Omar Saleh</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
